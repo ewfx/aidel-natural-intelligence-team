@@ -38,23 +38,26 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ewfx/aidel-natural-intelligence-team.git
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt (for Python)
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   uvicorn main:app --reload
    ```
 
 ## 🏗️ Tech Stack
 - 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
+- 🔹 Backend: FastAPI
 - 🔹 Database: PostgreSQL / Firebase
 - 🔹 Other: OpenAI API / Twilio / Stripe
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- Rajesh Hegde (rajeshhegde8)
+- Sowmya Ambala
+- Mansur
+- Chiranjeevi
+- Sanjeev
