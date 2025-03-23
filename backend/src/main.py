@@ -1,9 +1,10 @@
 from fastapi import FastAPI, File, UploadFile
+import json
 from backend.src.genai_prompt import ask_genai
 import os
 app = FastAPI()
-
-@app.post("/upload/")
+ 
+@app.post("/entity/assessment")
 async def upload_file(file: UploadFile = File(...)):
 
     print("Starting the analysis...")
@@ -25,14 +26,18 @@ async def upload_file(file: UploadFile = File(...)):
     with open(assessement_file_path, "r", encoding="utf-8") as file:
         assessmentRules = file.read()
     # Prompt for coming up with risk assessment
-    assessmentPrompt = f"Use the following assessment rules and come up with riskRating, riskRationale, complianceRating and complianceRationle  for each entity in '{entities}', AssessmentRules:'{assessmentRules}'. Look for internet for more recent data and news. Keep the original transaction detail fields associated with each entity for verification. Provide output in JSON format."
+    assessmentPrompt = f"Use the following assessment rules and come up with riskRating, riskRationale, complianceRating and complianceRationle  for each entity in '{entities}', AssessmentRules:'{assessmentRules}'. Look for internet for more recent data and news. Example check in Google for any negative news or results. Check in OpenCorporate, Wikipedia, Sanctions lists around the world. Keep the original transaction detail fields associated with each entity for verification. In Rationale mention which source of data was the reason like Transaction detail, Google, Wikipedia, Sanctions List, OpenCorporate etc.  Provide output in JSON format. Dont add any other text in output apart from this report."
     # Step 2: Risk Assessement using GenAI
-    riskAndComplainceReport = ask_genai(assessmentPrompt, "Risk Assessment")
+    riskAndComplianceReport = ask_genai(assessmentPrompt, "Risk Assessment")
     print("Final Risk and Compliance Report:")
-    print(riskAndComplainceReport)
-    print("Analysis is complete.")
-    
-    return riskAndComplainceReport
+    print(riskAndComplianceReport)
+    print("Analysis is complete. Returning the result.")
+    # Clean the string by removing "```json" and "```"
+    cleaned_str = riskAndComplianceReport.strip("```json").strip("```").strip()
+
+    # Parse the cleaned JSON string
+    parsed_json = json.loads(cleaned_str)
+    return parsed_json
 
 if __name__ == "__main__":
     import uvicorn

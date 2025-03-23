@@ -25,7 +25,7 @@ Date: 2025-03-23
 Sender: DEF Corp.
 Receiver: Unregistered Charity Fund
 Amount: $1,000,000
-Notes: Potential money laundering flagged by international watchdogs.
+Notes: Executed from NordVPN 123.56.3.45 North Korea
 
 Transaction ID: TXN005
 Date: 2025-03-24

@@ -14,7 +14,9 @@ def ask_genai(prompt, prompt_type):
         "X-Title": "hackathon.ai", # Optional. Site title for rankings on openrouter.ai.
     },
     extra_body={},
-    model="deepseek/deepseek-r1-zero:free",
+    # model="deepseek/deepseek-r1-zero:free",
+    # model="meta-llama/llama-3.1-8b-instruct:free",
+    model="nvidia/llama-3.1-nemotron-70b-instruct:free",
     messages=[
         {
         "role": "user",
