@@ -14,7 +14,7 @@ def main():
     print(entities)
     
     # Prompt for coming up with risk assessment
-    with open("D:\\RAJESHGOLD\\HACKATHON\\aidel-natural-intelligence-team\\backend\\src\\assessment_rules.txt", "r", encoding="utf-8") as file:
+    with open("D:\\RAJESHGOLD\\HACKATHON\\aidel-natural-intelligence-team\\code\\src\\assessment_rules.txt", "r", encoding="utf-8") as file:
         assessmentRules = file.read()
     assessmentPrompt = f"Use the following assessment rules and come up with riskRating, riskRationale, complianceRating and complianceRationle  for each entity in '{entities}', AssessmentRules:'{assessmentRules}'. Look for internet for more recent data and news. Keep the original transaction detail fields associated with each entity for verification. Provide output in JSON format."
     # Step 2: Risk Assessement using GenAI

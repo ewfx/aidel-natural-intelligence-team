@@ -1,12 +1,13 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Header, HTTPException
 import json
 from genai_prompt import ask_genai
 import os
 app = FastAPI()
- 
+SECRET_KEY = "fdsghf-dgsjhgjh-fkjdjh-fhgfhg"
 @app.post("/entity/assessment")
-async def upload_file(file: UploadFile = File(...)):
-
+async def upload_file(file: UploadFile = File(...), api_key: str = Header(None)):
+    if api_key != SECRET_KEY:
+        raise HTTPException(status_code=403, detail="Forbidden")
     print("Starting the analysis...")
     content = await file.read()
     transactionDetails = content.decode("utf-8")
@@ -40,5 +41,4 @@ async def upload_file(file: UploadFile = File(...)):
     return parsed_json
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))

@@ -1,20 +1,20 @@
 {
     "configurations": [
         {
-            "name": "Python: Uvicorn",
+            "name": "Python: gunicorn",
             "type": "debugpy",
             "request": "launch",
-            "module": "uvicorn",
+            "module": "gunicorn",
             "args": [
                 "main:app",
                 "--host", "localhost",
-                "--port", "8000",
+                "--port", "8080",
                 "--reload"
             ],
-            "cwd": "${workspaceFolder}/backend/src",
+            "cwd": "${workspaceFolder}/code/src",
             "justMyCode": true,
             "env": {
-                "PYTHONPATH": "${workspaceFolder}/backend/src"
+                "PYTHONPATH": "${workspaceFolder}/code/src"
             }
         }
     ]
