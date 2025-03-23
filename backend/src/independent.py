@@ -23,7 +23,3 @@ def main():
     print(riskAndComplainceReport)
     print("Analysis is complete.")
     
-    
-
-if __name__ == "__main__":
-    main()
