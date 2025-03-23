@@ -48,6 +48,7 @@ Describe the major technical or non-technical challenges your team encountered.
    ```sh
    uvicorn main:app --reload
    ```
+Access it at http://localhost:8000/docs
 
 ## 🏗️ Tech Stack
 - 🔹 Frontend: React / Vue / Angular

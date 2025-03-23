@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": ["backend.src.main:app", "--reload"],
+            "jinja": true
+        },
+        {
+            "name": "Python: Uvicorn",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "backend.src.main:app",
+                "--host", "localhost",
+                "--port", "8000",
+                "--reload"
+            ],
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/backend/src"
+            }
+        }
+    ]
+}
