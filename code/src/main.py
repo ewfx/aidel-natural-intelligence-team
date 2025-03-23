@@ -1,13 +1,11 @@
-from fastapi import FastAPI, File, UploadFile, Header, HTTPException
-import json
+from fastapi import FastAPI, File, UploadFile
 from genai_prompt import ask_genai
 import os
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
-SECRET_KEY = "fdsghf-dgsjhgjh-fkjdjh-fhgfhg"
+
 @app.post("/entity/assessment")
-async def upload_file(file: UploadFile = File(...), api_key: str = Header(None)):
-    if api_key != SECRET_KEY:
-        raise HTTPException(status_code=403, detail="Forbidden")
+async def upload_file(file: UploadFile = File(...)):
     print("Starting the analysis...")
     content = await file.read()
     transactionDetails = content.decode("utf-8")
@@ -40,5 +38,11 @@ async def upload_file(file: UploadFile = File(...), api_key: str = Header(None))
     parsed_json = json.loads(cleaned_str)
     return parsed_json
 
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
