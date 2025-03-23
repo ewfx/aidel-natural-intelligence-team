@@ -65,7 +65,7 @@ Here's a **checklist** for identifying risks and compliance issues in US bank tr
   - **31-60 = Medium Risk**
   - **61-100 = High Risk (Requires Review/Investigation)**
 
----
+---  
 
 ## **3. Compliance Rating Strategy (0-100 Scale)**
 **Evaluates compliance health of the entity against US AML, KYC, and FinCEN requirements.**

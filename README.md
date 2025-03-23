@@ -42,19 +42,20 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 2. Install dependencies  
    ```sh
-   pip install -r requirements.txt (for Python)
+   cd aidel-natural-intelligence-team\backend\src
+   pip install --no-cache-dir -r requirements.txt
    ```
 3. Run the project  
    ```sh
    uvicorn main:app --reload
    ```
-Access it at http://localhost:8000/docs
+Access API Swagger Document at http://localhost:8000/docs
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
+- 🔹 Frontend: NA
 - 🔹 Backend: FastAPI
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Database: NA
+- 🔹 Other: OpenRouter API / DeepSeek or NVIDIA LLama 3.1 70B
 
 ## 👥 Team
 - Rajesh Hegde (rajeshhegde8)

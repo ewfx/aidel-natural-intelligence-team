@@ -1,6 +1,6 @@
 from fastapi import FastAPI, File, UploadFile
 import json
-from backend.src.genai_prompt import ask_genai
+from genai_prompt import ask_genai
 import os
 app = FastAPI()
  
