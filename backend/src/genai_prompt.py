@@ -1,7 +1,8 @@
 import openai
 
-def ask_genai(prompt):
-    print(f"Asking GenAI '{prompt}'")
+def ask_genai(prompt, prompt_type):
+    print(f"Asking GenAI: '{prompt}'")
+    print(f"Generating response... for '{prompt_type}' It could take few minutes. Please wait.")
     client = openai.OpenAI(
         api_key="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",
         base_url="https://openrouter.ai/api/v1",
