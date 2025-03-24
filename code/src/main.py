@@ -34,7 +34,7 @@ async def upload_file(file: UploadFile = File(...)):
     print(riskAndComplianceReport)
     print("Analysis is complete. Returning the result.")
     # Clean the string by removing "```json" and "```"
-    cleaned_str = riskAndComplianceReport.strip("```json").strip("```").strip()
+    cleaned_str = riskAndComplianceReport.removeprefix("```json").removesuffix("```").strip()
 
     # Parse the cleaned JSON string
     parsed_json = json.loads(cleaned_str)
