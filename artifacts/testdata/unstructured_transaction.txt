@@ -1,0 +1,17 @@
+[
+  "TXN001: John Doe sent $5000 to Alice Smith in New York, USA on 2025-03-23T10:30:00Z via Bank Transfer. Marked as Low risk. Salary deposit.",
+  "TXN002: David Brown transferred €25000 to CryptoExchangeXYZ from London, UK on 2025-03-23T11:15:00Z via Wire Transfer. Marked as High risk. Large cryptocurrency purchase.",
+  "TXN003: Rahul Mehta sent ₹1500 to Neha Sharma in Mumbai, India on 2025-03-23T12:45:00Z via UPI. Marked as Low risk. Gift transfer.",
+  "TXN004: Unknown sender wired $75000 to an Offshore Trust in the Cayman Islands on 2025-03-23T13:05:00Z. Marked as High risk. Potential money laundering.",
+  "TXN005: Samantha Green paid $10000 to VPNHosting Ltd. in Toronto, Canada on 2025-03-23T14:10:00Z via Credit Card. Marked as Medium risk. Subscription for VPN services.",
+  "TXN006: Kenji Takahashi sent ¥2000 to Yuki Nakamura in Tokyo, Japan on 2025-03-23T15:20:00Z via Bank Transfer. Marked as Low risk. Personal loan repayment.",
+  "TXN007: Global Trade Ltd. wired $150000 to a sanctioned entity in Tehran, Iran on 2025-03-23T16:45:00Z. Marked as High risk. Transaction flagged due to sanctioned country.",
+  "TXN008: Michael Johnson paid $500 to Gaming Platform in Berlin, Germany on 2025-03-23T17:30:00Z via Credit Card. Marked as Low risk. Online gaming purchase.",
+  "TXN009: Anonymous Wallet transferred 8500 BTC to CryptoExchangeXYZ on 2025-03-23T18:50:00Z. Marked as High risk. Bitcoin transfer from an unknown wallet.",
+  "TXN010: Lucien Dubois wired €12000 to Luxury Watches Ltd. in Paris, France on 2025-03-23T19:10:00Z. Marked as Medium risk. Luxury purchase flagged for review.",
+  "TXN011: Corporation X transferred $60000 to a shell company in Panama on 2025-03-23T20:25:00Z. Marked as High risk. Potential shell company involvement.",
+  "TXN012: Emily Watson donated £200 to a Charity Organization in London, UK on 2025-03-23T21:05:00Z via Debit Card. Marked as Low risk. Donation to a registered charity.",
+  "TXN013: Zhao Wei wired ¥98000 to a sanctioned entity in Pyongyang, North Korea on 2025-03-23T22:30:00Z. Marked as High risk. Sanctioned country transaction.",
+  "TXN014: James Walker paid $4500 to VPN Provider Ltd. in Sydney, Australia on 2025-03-23T23:50:00Z via Credit Card. Marked as Medium risk. VPN subscription flagged for review.",
+  "TXN015: Wealth Management Ltd. transferred $300000 to an Anonymous Trust in Switzerland on 2025-03-24T01:15:00Z. Marked as High risk. Large anonymous transaction flagged for review."
+]

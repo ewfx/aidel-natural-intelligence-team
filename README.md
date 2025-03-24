@@ -45,6 +45,20 @@ Our project leverages a modern tech stack to ensure **scalability, performance, 
 
 One of the major challenges we faced was finding a reliable, free Generative AI API for entity risk analysis. We initially explored OpenAI and Meta AI APIs, but none offered free-tier access suitable for our needs. After extensive testing, we found OpenRouter, which provided access to a few high-quality free models, including DeepSeek and NVIDIA Llama 3.1 70B. While we evaluated other free models, most fell short in delivering accurate risk assessments. OpenRouter’s models, however, met our expectations, enabling effective entity recognition and risk evaluation within our API.
 
+
+## 🏃 How to Access Cloud API
+
+This API has been deployed in cloud. You can access using below Swagger API.
+https://nitriskanalysis-75609355859.us-east4.run.app/docs
+
+It will open Swagger Documentation of the API
+Click on /entity/assessment API
+Click on choose file
+Browse and select structured or unstructured json which contains bank transaction details
+Click on Execute
+Wait till response comes from API (It could take few seconds to few minutes for the risk analysis.)
+Verify the data
+
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
