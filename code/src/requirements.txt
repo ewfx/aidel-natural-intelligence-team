@@ -3,3 +3,4 @@ Werkzeug==3.0.3
 fastapi
 openai
 uvicorn
+python-multipart

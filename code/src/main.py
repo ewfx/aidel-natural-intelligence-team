@@ -1,6 +1,8 @@
 from fastapi import FastAPI, File, UploadFile
 from genai_prompt import ask_genai
 import os
+import json
+import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
@@ -45,4 +47,3 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
