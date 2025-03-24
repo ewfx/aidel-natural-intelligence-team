@@ -69,9 +69,10 @@ The API has been deployed in the cloud. You can access it using the **Swagger AP
 ### Steps to Test:
 1. Open the Swagger documentation.
 2. Click on the **/entity/assessment** API.
-3. Click on **Choose File** and upload a JSON file with structured or unstructured bank transaction details.
-4. Click **Execute** and wait for the response (**Processing time: A few seconds to minutes**).
-5. Verify the risk assessment results.
+3. Click on Try it Out button
+4. Click on **Choose File** and upload a JSON file with structured or unstructured bank transaction details.
+5. Click **Execute** and wait for the response (**Processing time: A few seconds to minutes**).
+6. Verify the risk assessment results.
 
 ---
 
