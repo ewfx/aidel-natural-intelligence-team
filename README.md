@@ -17,11 +17,12 @@
 Our hackathon project focuses on developing a Python-based API for entity risk analysis in bank transactions. 
 
 ## 🎥 Demo
-🔗 [Local Video Demo](#https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Demo%20Recording(Trimmed)%202025-03-23%20111113.mp4) 
-📹 [Google Cloud Video Demo](#https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Google%20Cloud%20API%20Demo%20Trimmed.mp4)  
+
+🔗 [Local Video Demo](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Demo%20Recording(Trimmed)%202025-03-23%20111113.mp4) 
+📹 [Google Cloud Video Demo](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Google%20Cloud%20API%20Demo%20Trimmed.mp4)  
 🖼️ Screenshots:
 
-![Screenshots](#https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Testing.docx)
+![Screenshots](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Testing.docx)
 
 ## 💡 Inspiration
 Generative AI is a new buzz in market. If properly leveraged it can help to increase accuracy in risk and compliance analysis.
