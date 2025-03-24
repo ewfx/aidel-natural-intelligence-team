@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Bank Transaction Risk and Compliance Analysis API
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -13,48 +13,103 @@
 
 ---
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+# 🎯 Introduction
+Our hackathon project focuses on developing a Python-based API for entity risk analysis in bank transactions.
+
+---
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+🔗 [Local Video Demo](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Demo%20Recording(Trimmed)%202025-03-23%20111113.mp4)  
+📹 [Google Cloud Video Demo](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Google%20Cloud%20API%20Demo%20Trimmed.mp4)  
+🖼️ [Screenshots](https://github.com/ewfx/aidel-natural-intelligence-team/raw/refs/heads/develop/artifacts/demo/Testing.docx)
+
+---
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Generative AI is a new buzz in the market. If properly leveraged, it can help increase accuracy in risk and compliance analysis.
+
+---
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+This API extracts and evaluates entities such as **companies and individuals**, assessing them against multiple risk factors, including:
+- 🛑 **Sanctions & AML compliance**
+- 🔍 **VPN usage detection**
+- 🚨 **Fraudulent entity detection**
+- 📰 **Adverse news screening**
+- 🏢 **Corporate reports & due diligence**
+
+The system provides a **risk and compliance rating**, helping organizations detect and prevent illicit financial activities while ensuring regulatory compliance. It processes transaction data as input and generates a **structured risk assessment report in JSON format**, enabling seamless integration with compliance workflows.
+
+---
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Our project leverages a modern tech stack to ensure **scalability, performance, and AI-driven risk analysis**:
+
+- **🖥️ Backend API:** Developed using **Python** with **FastAPI**, deployed on **Uvicorn** for high-performance asynchronous processing.
+- **🧠 AI/LLM Integration:** Utilizes **OpenRouter** to access **DeepSeek** and **Llama 3.1 NVIDIA 70B** models for advanced entity recognition and risk assessment.
+- **📊 Data Processing:** Extracts structured and unstructured data from bank transactions, analyzing it for compliance risks.
+- **☁️ Deployment:** Hosted on a cloud environment, ensuring seamless API accessibility and real-time processing.
+- **📄 Output Format:** Generates **JSON-based risk reports** for easy integration with regulatory and compliance systems.
+
+---
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+One major challenge was finding a **reliable, free Generative AI API** for entity risk analysis. Initially, we explored OpenAI and Meta AI APIs, but none offered suitable free-tier access.
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+After extensive testing, we found **OpenRouter**, which provided access to high-quality free models, including **DeepSeek and NVIDIA Llama 3.1 70B**. Many other free models fell short in delivering accurate risk assessments, but these models met our expectations, enabling effective **entity recognition and risk evaluation** within our API.
+
+---
+
+## 🏃 How to Test Cloud API
+The API has been deployed in the cloud. You can access it using the **Swagger API documentation**:
+
+🔗 [Swagger Documentation](https://nitriskanalysis-75609355859.us-east4.run.app/docs)
+
+### Steps to Test:
+1. Open the Swagger documentation.
+2. Click on the **/entity/assessment** API.
+3. Click on Try it Out button
+4. Click on **Choose File** and upload a JSON file with structured or unstructured bank transaction details.
+5. Click **Execute** and wait for the response (**Processing time: A few seconds to minutes**).
+6. Verify the risk assessment results.
+
+---
+
+## 🏃 How to Run Locally
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/ewfx/aidel-natural-intelligence-team.git
+```
+
+### 2️⃣ Install Dependencies
+```sh
+cd aidel-natural-intelligence-team/backend/src
+pip install --no-cache-dir -r requirements.txt
+```
+
+### 3️⃣ Run the API Locally
+```sh
+uvicorn main:app --reload
+```
+
+📌 **Access the API Swagger Document at:** [http://localhost:8000/docs](http://localhost:8000/docs)
+
+---
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 **Frontend:** NA
+- 🔹 **Backend:** FastAPI
+- 🔹 **Database:** NA
+- 🔹 **AI Models:** OpenRouter API for model access / DeepSeek / NVIDIA Llama 3.1 70B
+- 🔹 **Cloud Hosting:** Google Cloud Run
+- 🔹 **Dev Tools:** Visual Studio Code, Python
+  
+---
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Rajesh Hegde** (rajeshhegde8)
+- **Sowmya Ambala**
+- **Mansur**
+- **Chiranjeevi**
+- **Sanjeev**

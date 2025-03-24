@@ -1,0 +1,43 @@
+
+Transaction ID: TXN001
+Date: 2025-03-20
+Sender: John Doe
+Receiver: XYZ International Holdings
+Amount: $500,000
+Notes: Large fund transfer flagged in Panama Papers.
+
+Transaction ID: TXN002
+Date: 2025-03-21
+Sender: ABC Ltd.
+Receiver: CryptoEx Offshore Services
+Amount: $250,000
+Notes: Suspicious cryptocurrency transaction involving a sanctioned entity.
+
+Transaction ID: TXN003
+Date: 2025-03-22
+Sender: Jane Smith
+Receiver: Shadow Trust LLC
+Amount: $750,000
+Notes: Entity associated with multiple financial fraud cases.
+
+Transaction ID: TXN004
+Date: 2025-03-23
+Sender: DEF Corp.
+Receiver: Unregistered Charity Fund
+Amount: $1,000,000
+Notes: Executed from NordVPN 123.56.3.45 North Korea
+
+Transaction ID: TXN005
+Date: 2025-03-24
+Sender: Unknown
+Receiver: High-Risk Bank (Blacklisted)
+Amount: $600,000
+Notes: Transaction flagged due to association with known financial crimes.
+
+Transaction ID: TXN006
+Date: 2025-03-24
+Sender: Rajesh Hegde
+Receiver: Infosys Limited
+Amount: $600,000
+Notes: Transaction for IT Services advances.
+
