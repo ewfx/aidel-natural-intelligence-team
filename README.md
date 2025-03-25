@@ -16,6 +16,8 @@
 # 🎯 Introduction
 Our hackathon project focuses on developing a Python-based API for entity risk analysis in bank transactions.
 
+![image](https://github.com/user-attachments/assets/6726b695-10fb-408c-ac7e-283db800bb82)
+
 ---
 
 ## 🎥 Demo
