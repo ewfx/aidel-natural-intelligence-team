@@ -14,6 +14,8 @@
 ---
 
 # 🎯 Introduction
+Before reading anything further directly test our api in cloud! https://nitriskanalysis-75609355859.us-east4.run.app/docs
+You can upload any bank transactions list it will analyze and give results!
 Our hackathon project focuses on developing a Python-based API for entity risk analysis in bank transactions.
 
 ![image](https://github.com/user-attachments/assets/6726b695-10fb-408c-ac7e-283db800bb82)
