@@ -4,7 +4,7 @@ def ask_genai(prompt, prompt_type):
     print(f"Asking GenAI: '{prompt}'")
     print(f"Processing {prompt_type}... Retrieving and evaluating multiple data sources. This may take a few minutes. Thank you for your patience. Comprehensive insights are on the way.")
     client = openai.OpenAI(
-        api_key="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",
+        api_key="",
         base_url="https://openrouter.ai/api/v1",
         )
 
